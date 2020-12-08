@@ -52,6 +52,10 @@ def upload_to_bq(data):
     print("File successfully loaded")
 
 
-if __name__ == "__main__":
+def main():
     data = get_source_file()
     upload_to_bq(data)
+
+
+if __name__ == "__main__":
+    main()
