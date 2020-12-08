@@ -55,6 +55,10 @@ def upload_to_bq(data):
 def main():
     data = get_source_file()
     upload_to_bq(data)
+    
+
+def google_cloud_function(request):
+    main()
 
 
 if __name__ == "__main__":
